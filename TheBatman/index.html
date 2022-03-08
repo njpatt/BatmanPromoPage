@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="./img/batmanlogo.png" alt=""></a>
+        <div class="toggle"><img src="./img/hamburger-removebg-preview.png">
+        
+        </div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2>Experience <span> Gotham </span> City.</h2>
+            <p>When the Riddler, a sadistic serial killer, begins murdering key political figures in Gotham, Batman is forced to investigate the city's hidden corruption and question his family's involvement.</p>
+             <h3>In theaters now</h3>   
+            <a href="#" class= "play" onclick="toggle();"><img src="./img/playbutton-removebg-preview.png">Watch Trailer</a>
+                    <ul class="sci">
+                        <li><a href="https://www.facebook.com/TheBatman/" target="_blank"><img src="./img/facebook-removebg-preview.png"></a></li>
+                        <li><a href="https://www.youtube.com/watch?v=mqqft2x_Aa4&ab_channel=WarnerBros.Pictures" target="_blank"><img src="./img/youtube-removebg-preview.png"></a></li>
+                        <li><a href="https://www.imdb.com/title/tt1877830/" target="_blank"><img src="./img/imdb-removebg-preview.png"></a></li>
+                    </ul> 
+            </div>
+        </div>
+        <div class="trailer">
+            <video src="./img/The Batman.mp4" controls ="true"></video>
+            <img src="./img/close-removebg-preview.png" class="close" onclick="toggle();">
+        </div>
+        <script type="text/javascript">
+            function toggle(){
+                var trailer = document.querySelector('.trailer');
+                trailer.classList.toggle('active')
+            }
+        </script>
+</body>
+</html>
